@@ -1,0 +1,34 @@
+.Nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    h3{
+      font-weight: bolder;
+      font-size: 30px;
+      color: coral;
+      border: 8px solid coral;
+      padding: 8px;
+    }
+    .navlinks{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        list-style: none;
+        
+    }
+}
+  
+  @media only screen and (max-width: 600px) {
+    .Nav{
+      //background-color: lightblue;
+      flex-direction: column;
+
+      .navlinks{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
