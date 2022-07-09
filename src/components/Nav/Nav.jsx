@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink as Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 const Nav = () => {
 
@@ -15,7 +15,7 @@ const Nav = () => {
         {
             name: "Projects",
             href: "#projects"
-        }
+        },
 
     ]
 
@@ -26,7 +26,7 @@ const Nav = () => {
         <div className="navlinks">
            {navList.map((link) => (
                <li>
-                   <Link to={link.href}>{link.name}</Link>
+                   <Link smooth to={link.href}>{link.name}</Link>
                </li>
             ))}
         </div>
