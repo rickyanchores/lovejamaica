@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+$primary_font: 'Poppins', 'Open Sans',sans-serif;
+$title_font: 'Oswald', sans-serif;
+
+@mixin title_font($heading){
+    font-family: $title_font;
+    font-weight: 600;
+
+    @if ($heading == 'h1'){
+        font-size: 48px;
+
+        @media screen and (max-width: $md){
+            font-size: 36px;
+        }
+
+        @media screen and (max-width: $sm){
+            font-size: 30px;
+        }
+    }
+    @if ($heading == 'h2'){
+        font-size: 32px;
+
+        @media screen and (max-width: $md) {
+            
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: $sm) {
+            
+            font-size: 22px;
+        }
+    }
+    @if ($heading == 'h4'){
+        font-size: 22px;
+
+        @media screen and (max-width: $md) {
+            
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $sm) {
+            
+            font-size: 18px;
+        }
+    }
+}
+
+@mixin txt_font($weight){
+    font-family: $primary_font;
+    font-weight: $weight;
+}
+
+h1{
+    @include title_font('h1');
+}
+
+h2{
+    @include title_font('h2'); 
+}
+
+p, a, span{
+    @include txt_font(300);
+}
+
+a.btn, .btn, button{
+    @include txt_font(600);
+    font-size: 14px;
+
+    @media screen and (max-width: 576px) {
+        font-size: 12px;
+    }
+}
+
+.txt-bd {
+    font-weight: 600;
+}
+

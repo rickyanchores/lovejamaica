@@ -1,0 +1,24 @@
+@import './responsive';
+@import './colors';
+@import './fonts';
+@import './crossBrowser';
+
+@import './themes';
+
+@import './components';
+
+.container{
+
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+    @media screen and (max-width: $md){
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: $sm){
+        padding: .5rem 1rem;
+    }
+}
+

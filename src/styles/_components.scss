@@ -1,0 +1,35 @@
+//*BUTTONS
+
+.btn{
+    @include borderRadius(999px);
+    border: 1px solid;
+    min-width: 168px;
+    max-width: fit-content;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include transition(all 0.2s linear);
+
+    &.btn-primary{
+    
+        @include primary_theme;
+    
+        &:hover{
+            @include secondary_theme;
+        }
+    }
+}
+
+
+//*BG
+
+.primary-bg{
+
+    background-color: rgba($color: $light_green, $alpha: 0.1);
+
+    .bg-icon{
+        color: rgba($color: $primary, $alpha: 0.4);
+    }
+}

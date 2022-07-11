@@ -1,0 +1,13 @@
+@mixin primary_theme{
+
+    background-color: $primary;
+    color: $pure_w;
+    border-color: $primary;
+}
+
+@mixin secondary_theme{
+
+    background-color: $pure_w;
+    color: $primary;
+    border-color: $primary;
+}
