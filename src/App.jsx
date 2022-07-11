@@ -5,19 +5,21 @@ import About from './sections/About/About';
 import Footer from './sections/Footer/Footer';
 import Home from './sections/Home/Home';
 import Projects from './sections/Projects/Projects';
+import Ui from './tests/Ui';
 
 const App = () => {
   return (
     <div className='App'>
         <Router>
-            <Nav />
+            {/* <Nav /> */}
             <Routes>
                 <Route exact component={Home}/>
+                <Route path='/test' element={<Ui/>}/>
             </Routes>
-            <Home />
+            {/* <Home />
             <About />
             <Projects />
-            <Footer />
+            <Footer /> */}
         </Router>
     </div>
   )
