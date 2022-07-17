@@ -1,0 +1,19 @@
+.SocialMedia{
+    //border: 2px solid black;
+    padding: 2em;
+    margin: 2em;
+    .socLink{
+      color: whitesmoke;
+      background-color: black;
+      text-decoration: none;
+      margin: 1em;
+      border: 2px solid green;   
+      font-weight: bolder;
+      padding: 1em;
+    }
+    .socLink:hover{
+      background-color: yellow;
+      color: black;
+      transition: 0.4s ease-in-out;
+    }
+  };

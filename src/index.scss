@@ -9,6 +9,7 @@
 @import "./sections/Projects/Projects.scss";
 @import "./sections/Footer/Footer.scss";
 @import "./components/Card/Card.scss";
+@import "./components/SocialMedia/SocialMedia.scss";
 
 
 *{
@@ -20,7 +21,7 @@
 body{
   //font-family: 'Jura', sans-serif;
   font-family: 'Roboto', sans-serif;
-  background: #333;
+  background: #fff;
 }
 
 .container{
